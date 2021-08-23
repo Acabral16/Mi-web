@@ -1,0 +1,14 @@
+$rojo: #900;
+$verde: #090;
+
+.card img {
+    border: 1px solid darken($rojo, 20%);
+
+    &:hover {
+        border: 3px solid lighten($verde, 20%);
+    }
+}
+
+.contacto, h1, h2 {
+    color: hsl(180, 90%, 50%);
+}

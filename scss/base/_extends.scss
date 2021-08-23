@@ -1,0 +1,17 @@
+%redondeado {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+%none {
+    text-decoration: none
+}
+
+.carousel-item img {
+    @extend %redondeado;
+}
+
+.contacto {
+    @extend %none;
+}
+

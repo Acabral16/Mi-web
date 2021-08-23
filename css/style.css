@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+.iconos {
+  font-size: 40px;
+}
+
+.contacto {
+  font-size: 20px;
+}
+
+.parrafo {
+  font-weight: bold;
+  word-spacing: 3px;
+}
+
+.bg-condicion {
+  background-color: orange;
+  border-radius: 4px;
+}
+
+.card img {
+  border: 1px solid #330000;
+}
+.card img:hover {
+  border: 3px solid lime;
+}
+
+.contacto, h1, h2 {
+  color: #0df2f2;
+}
+
+.carousel-item img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contacto {
+  text-decoration: none;
+}
+
+body {
+  background-color: mintcream;
+}
+
+/*# sourceMappingURL=style.css.map */
