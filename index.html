@@ -12,8 +12,7 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!--CSS-->
-    <!--Cambio de prueba para nueva rama en GIT-->
-
+    
     <link rel="stylesheet" href="css/style.css">
 
     <!--META TAGS-->
@@ -42,7 +41,7 @@
 
     <!--FAVICON-->
 
-    <link rel="shortcut icon" href="multimedia/favicon.ico"  type="image/x-icon">
+    <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
 
     <!--TITLE-->
 
@@ -54,46 +53,40 @@
 
     <!--NAVBAR-->
 
-<section>
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-xl-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="multimedia/LOGO.png" class="rounded-circle" alt="" width="100"
-                    height="100">
-            </a>
-            <div class="menu-nav collapse navbar-collapse show" id="navbarDark">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"> <img src="/Multimedia/LOGO.png" alt="" width="100" height="100"
+                        class="d-inline-block align-top rounded-circle"></a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#pizzas">Pizzas</a>
+                        <a class="nav-link active" aria-current="page" href="#">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-</section>
 
-        <!--BANNER-->
-    <section class="multimedia-container">
+    <!--BANNER-->
+    <section class="banner">
         <div id="inicio">
             <img class="w-100" src="multimedia/BANNER.png" alt="">
         </div>
-
-        <!--VIDEO-->
-
-        <div class= pizza-video>
-            <video src="multimedia/VIDEO.mp4" autoplay loop title="Tentate con la pizza mas rica de Buenos Aires"></video>
-        </div>
     </section>
-        
-    <!--MAIN-->
 
+    <!--MAIN-->
     <section class="container pt-5">
-        <h1 class="display-2 bg-dark w-100 text-center"># SANTA PIZZA</h1>
+        <h1 class="display-2  text-center">PIZZA PARA COMPARTIR</h1>
         <div class="row">
             <div class="col-lg-4 col-sm-12">
                 <p class="parrafo text-center">
@@ -139,9 +132,49 @@
         </div>
     </section>
 
+    <!--VIDEO-->
+    <section class="container pt-5">
+        <h2 class="display-2  text-center">PIZZA A LA PIEDRA</h2>
+        <video class="w-100" src="multimedia/VIDEO.mp4" autoplay loop
+            title="Tentate con la pizza mas rica de Buenos Aires"></video>
+    </section>
+
+    <!--PROMOCION-->
+
+    <section class="container pt-5 " id="promocion">
+        <h4 class="display-2 text-center">MARTES 2 x 1</h4>
+                <div class="p-5 row row-cols-1 row-cols-md-3 g-4 w-100">
+            <div class="col">
+                <div class="h-100">
+                    <img src="Multimedia/WAPP.png" class="card-img-top" alt="...">
+                    <div class="card-body">                        
+                        <p class="card-text">HACE TU PEDIDO AL <a href="tel:+ 1512345678"> 15-12345678</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100">
+                    <img src="Multimedia/ENVIOS.png" class="card-img-top" alt="...">
+                    <div class="card-body">                        
+                        <p class="card-text">CONSULTA EL COSTO DE ENVÍO SEGÚN TU ZONA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100">
+                    <img src="Multimedia/TAKE-AWAY.png" class="card-img-top" alt="...">
+                    <div class="card-body">    
+                        <p class="card-text"> TAMBIÉN PODÉS RETIRARLO EN NUESTRO LOCAL </p>
+                    </div>
+                </div>
+            </div>
+       
+
+    </section>
+
     <!--CARDS-->
     <section class="container pt-5" id="pizzas">
-        <h2 class="display-2 bg-dark text-center">#NUESTROS GUSTOS </h2>
+        <h3 class="display-2 text-center">NUESTRAS PIZZAS</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4 w-100">
             <div class="col">
                 <div class="card h-100">
@@ -211,101 +244,30 @@
         </div>
     </section>
 
-    <!--FORM-->
-    <!-- Note: A custom script is used to activate validation:
-
-var forms = document.querySelectorAll('.needs-validation')
-Array.prototype.slice.call(forms)
-  .forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
--->
-    <form class="row g-3 needs-validation container p-5" novalidate="">
-        <div class="col-md-4 position-relative">
-            <label for="validationTooltip01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationTooltip01" value="Mark" required="">
-            <div class="valid-tooltip">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4 position-relative">
-            <label for="validationTooltip02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationTooltip02" value="Otto" required="">
-            <div class="valid-tooltip">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4 position-relative">
-            <label for="validationTooltipUsername" class="form-label">Username</label>
-            <div class="input-group has-validation">
-                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                <input type="text" class="form-control" id="validationTooltipUsername"
-                    aria-describedby="validationTooltipUsernamePrepend" required="">
-                <div class="invalid-tooltip">
-                    Please choose a unique and valid username.
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 position-relative">
-            <label for="validationTooltip03" class="form-label">City</label>
-            <input type="text" class="form-control" id="validationTooltip03" required="">
-            <div class="invalid-tooltip">
-                Please provide a valid city.
-            </div>
-        </div>
-        <div class="col-md-3 position-relative">
-            <label for="validationTooltip04" class="form-label">State</label>
-            <select class="form-select" id="validationTooltip04" required="">
-                <option selected="" disabled="" value="">Choose...</option>
-                <option>...</option>
-            </select>
-            <div class="invalid-tooltip">
-                Please select a valid state.
-            </div>
-        </div>
-        <div class="col-md-3 position-relative">
-            <label for="validationTooltip05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationTooltip05" required="">
-            <div class="invalid-tooltip">
-                Please provide a valid zip.
-            </div>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-    </form>
-
     <!--MAPS-->
-
-    <div class="maps">
+    <section class="container py-5">
+        <h6 class="display-2 text-center">NOS PODES ENCONTRAR EN</h6>
+        <div class="maps">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017813201944!2d-58.388170685195185!3d-34.60411646502529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1ses!2sar!4v1628696683240!5m2!1ses!2sar"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
+        </div>
+    </section>
     <!--FOOTER-->
 
     <footer id="contacto" class="footer p-5 bg-dark">
         <div class="footer-contact row row-cols-1 row-cols-md-3 text-center w-100">
-            <div class="col">
-                <a class="contacto" href="tel:+ 1512345678"> 15-12345678</a>
-            </div>
-
-            <div class="col">
+             <div class="col">
                 <a class="contacto" href="mailto:saintpizza@gmail.com">Saintpizza@gmail.com</a>
             </div>
-
             <div class="col">
                 <p class="contacto">El salvador 5707. CABA</p>
             </div>
+            <div class="col">
+                <a class="contacto" href="tel:+ 1512345678"> 15-12345678</a>
+            </div>
         </div>
+        
 
         <div class="d-flex justify-content-evenly w-100 p-5">
             <div>
@@ -321,7 +283,7 @@ Array.prototype.slice.call(forms)
             <div>
                 <a class="iconos" href="http://youtube.com"><span class="iconify" data-icon="logos:youtube-icon"
                         data-inline="false"></span></a>
-             </div>
+            </div>
         </div>
 
     </footer>

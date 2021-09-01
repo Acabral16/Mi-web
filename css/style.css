@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
 .iconos {
   font-size: 40px;
 }
 
 .contacto {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .parrafo {
   font-weight: bold;
   word-spacing: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
 }
 
 .bg-condicion {
@@ -24,12 +27,18 @@
   border: 3px solid aqua;
 }
 
-.contacto, h1, h2 {
+.contacto {
   color: #0df2f2;
 }
 
+h1, h2, h3, h4, h6 {
+  background-color: #000;
+  color: #ffff;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+
 .carousel-item img {
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 10px;
 }
 
@@ -37,14 +46,16 @@
   text-decoration: none;
 }
 
-body {
-  background-color: mintcream;
+nav {
+  background-color: #fff;
 }
 
-.pizza-video video {
-  width: 80%;
-  margin: auto 10%;
-  background-color: black;
+footer {
+  background-color: #000000;
+}
+
+body {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

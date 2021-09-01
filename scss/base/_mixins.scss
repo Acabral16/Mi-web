@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @mixin varios-parametros($weight, $spacing){
     font-weight: $weight;
     word-spacing: $spacing;    
 }
 
 .parrafo {
-    @include varios-parametros(bold, 3px,)
+    @include varios-parametros(bold, 3px,);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
 }
-
 
 @mixin condicion ($bg-color) {
     background-color: $bg-color;
@@ -19,6 +19,7 @@
         border-radius: 10px;
     }
 }
+
 
 .bg-condicion {
     @include condicion(orange)
