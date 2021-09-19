@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!--CSS-->
-    
+
     <link rel="stylesheet" href="css/style.css">
 
     <!--META TAGS-->
@@ -53,7 +53,7 @@
 
     <!--NAVBAR-->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,13 +64,13 @@
                         class="d-inline-block align-top rounded-circle"></a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                        <a class="nav-link active" aria-current="page" href="#productos">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+                        <a class="nav-link active" aria-current="page" href="#contacto">Contactanos</a>
                     </li>
                 </ul>
             </div>
@@ -79,13 +79,14 @@
 
     <!--BANNER-->
     <section class="banner">
-        <div id="inicio">
+        <div>
             <img class="w-100" src="multimedia/BANNER.png" alt="">
+            <a  href="#promocion"><img class="promocion" src="multimedia/MARTES.png" alt=""></a> 
         </div>
     </section>
 
     <!--MAIN-->
-    <section class="container pt-5">
+    <section class="container pt-5" id="inicio">
         <h1 class="display-2  text-center">PIZZA PARA COMPARTIR</h1>
         <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -143,11 +144,11 @@
 
     <section class="container pt-5 " id="promocion">
         <h4 class="display-2 text-center">MARTES 2 x 1</h4>
-                <div class="p-5 row row-cols-1 row-cols-md-3 g-4 w-100">
+        <div class="p-5 row row-cols-1 row-cols-md-3 g-4 w-100">
             <div class="col">
                 <div class="h-100">
                     <img src="Multimedia/WAPP.png" class="card-img-top" alt="...">
-                    <div class="card-body">                        
+                    <div class="card-body">
                         <p class="card-text">HACE TU PEDIDO AL <a href="tel:+ 1512345678"> 15-12345678</a> </p>
                     </div>
                 </div>
@@ -155,7 +156,7 @@
             <div class="col">
                 <div class="h-100">
                     <img src="Multimedia/ENVIOS.png" class="card-img-top" alt="...">
-                    <div class="card-body">                        
+                    <div class="card-body">
                         <p class="card-text">CONSULTA EL COSTO DE ENVÍO SEGÚN TU ZONA</p>
                     </div>
                 </div>
@@ -163,17 +164,17 @@
             <div class="col">
                 <div class="h-100">
                     <img src="Multimedia/TAKE-AWAY.png" class="card-img-top" alt="...">
-                    <div class="card-body">    
+                    <div class="card-body">
                         <p class="card-text"> TAMBIÉN PODÉS RETIRARLO EN NUESTRO LOCAL </p>
                     </div>
                 </div>
             </div>
-       
+
 
     </section>
 
     <!--CARDS-->
-    <section class="container pt-5" id="pizzas">
+    <section class="container pt-5" id="productos">
         <h3 class="display-2 text-center">NUESTRAS PIZZAS</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4 w-100">
             <div class="col">
@@ -246,18 +247,18 @@
 
     <!--MAPS-->
     <section class="container py-5">
-        <h6 class="display-2 text-center">NOS PODES ENCONTRAR EN</h6>
+        <h6 class="display-2 text-center">VISITANOS EN:</h6>
         <div class="maps">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017813201944!2d-58.388170685195185!3d-34.60411646502529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1ses!2sar!4v1628696683240!5m2!1ses!2sar"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017813201944!2d-58.388170685195185!3d-34.60411646502529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1ses!2sar!4v1628696683240!5m2!1ses!2sar"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
     <!--FOOTER-->
 
     <footer id="contacto" class="footer p-5 bg-dark">
         <div class="footer-contact row row-cols-1 row-cols-md-3 text-center w-100">
-             <div class="col">
+            <div class="col">
                 <a class="contacto" href="mailto:saintpizza@gmail.com">Saintpizza@gmail.com</a>
             </div>
             <div class="col">
@@ -267,7 +268,7 @@
                 <a class="contacto" href="tel:+ 1512345678"> 15-12345678</a>
             </div>
         </div>
-        
+
 
         <div class="d-flex justify-content-evenly w-100 p-5">
             <div>

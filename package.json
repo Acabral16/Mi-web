@@ -1,5 +1,5 @@
 {
-  "name": "bootstrapconjs",
+  "name": "web-pizzeria",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,5 @@
     "url": "https://github.com/Acabral16/Mi-web/issues"
   },
   "homepage": "https://github.com/Acabral16/Mi-web#readme",
-  "description": ""
+  "description": "pizza al molde y a la piedra"
 }
